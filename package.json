@@ -1,0 +1,35 @@
+{
+  "name": "is-donottrack",
+  "version": "1.0.0",
+  "description": "If doNotTrack is enabled? Works till IE6",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "lint": "tslint -p tsconfig.json",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VarunBatraIT/is-doNotTrack.git"
+  },
+  "keywords": [
+    "donottrack",
+    "doNotTrack",
+    "navigator.doNotTrack"
+  ],
+  "author": "Varun Batra <codevarun@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VarunBatraIT/is-doNotTrack/issues"
+  },
+  "homepage": "https://github.com/VarunBatraIT/is-doNotTrack#readme",
+  "devDependencies": {
+    "typescript": "^3.9.5"
+  }
+}
