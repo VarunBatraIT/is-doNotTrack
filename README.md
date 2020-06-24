@@ -10,7 +10,7 @@ import DoNoTrack from 'is-donottrack'
 
 
 DoNoTrack.IsEnabled() // true/false
-DoNoTrack.IsUnsupported() // true/false
+DoNoTrack.IsUnSupported() // true/false
 DoNoTrack.IsDisabled() // true/false
 DoNoTrack.Status() // true/false/ new Error('Unsupported!')
 
