@@ -30,29 +30,34 @@ export default class DoNotTrack {
     }
     return new Error('Unsupported!');
   }
-  public static IsUnSupported(){
-    try{
-      DoNotTrack.Status();
-    }catch(e){
-      return true;
-    }
-    return false;
-  }
-  public static IsDisabled(){
-    if(DoNotTrack.IsEnabled() === false){
-      return true;
-    }
-    return false;
-  }
-  public static IsEnabled(){
+
+  public static IsEnabled(): boolean {
     try{
       if(DoNotTrack.Status() === true){
         return true;
-      }else{
-        return false;
       }
     }catch(e){
       return false;
     }
+    return false;
   }
+  public static IsDisabled(): boolean {
+    try{
+      if(DoNotTrack.Status() === false){
+        return true;
+      }
+    }catch(e){
+      return false;
+    }
+    return false;
+  }
+  public static IsUnSupported(): boolean {
+    try{
+      DoNotTrack.Status()
+    }catch(e){
+      return true;
+    }
+    return false;
+  }
+
 }
