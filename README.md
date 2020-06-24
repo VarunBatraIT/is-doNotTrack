@@ -4,12 +4,15 @@
 
 ```
 
-import doNoTrack from 'is-donottrack'
+import DoNoTrack from 'is-donottrack'
 
 // then 
 
 
-doNoTrack.isEnabled() // true/false/new Error('Unsupported!')
+DoNoTrack.IsEnabled() // true/false
+DoNoTrack.IsUnsupported() // true/false
+DoNoTrack.IsDisabled() // true/false
+DoNoTrack.Status() // true/false/ new Error('Unsupported!')
 
 
 
