@@ -2,6 +2,12 @@
 
 # Usage 
 
+
+```
+npm i is-donottrack
+```
+
+
 ```
 
 import DoNoTrack from 'is-donottrack'
