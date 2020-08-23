@@ -4,7 +4,8 @@
 
 
 ```
-npm i is-donottrack
+npm i is-donottrack -S
+
 ```
 
 
